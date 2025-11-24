@@ -1,0 +1,16 @@
+dataset_root:    AttentionHTR-main/model/result/test_data	 dataset: /
+sub-directory:	/.	 num samples: 52
+Accuracy: 88.46153846
+Norm ED: 0.08722527
+dataset_root:    AttentionHTR-main/model/result/test_data	 dataset: /
+sub-directory:	/.	 num samples: 52
+Accuracy: 88.46153846
+Norm ED: 0.08722527
+dataset_root:    AttentionHTR-main/model/result/test_data	 dataset: /
+sub-directory:	/.	 num samples: 52
+Accuracy: 88.46153846
+Norm ED: 0.08722527
+dataset_root:    AttentionHTR-main/model/result/test_data	 dataset: /
+sub-directory:	/.	 num samples: 52
+Accuracy: 88.46153846
+Norm ED: 0.08722527

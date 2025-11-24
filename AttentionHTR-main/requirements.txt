@@ -1,0 +1,11 @@
+lmdb
+pillow
+nltk
+natsort
+torch==2.1.0
+torchvision
+six
+lmdb
+requests
+fire
+opencv-contrib-python
