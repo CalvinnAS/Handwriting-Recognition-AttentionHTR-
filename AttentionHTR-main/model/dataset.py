@@ -127,8 +127,9 @@ def hierarchical_dataset(root, opt, select_data='/'):
                 # because dir `/result/{opt.exp_name}` is created only during testing,
                 # but this function is also be called by train.py.
                 if hasattr(opt, 'eval_data'):
-                    eval_dir = opt.eval_data.split("/")[-1]
-                    with open(f"./result/{opt.exp_name}/log_filtered_index_list_{eval_dir}.txt", "a", encoding="utf-8") as f:
+                    eval_dir_name = os.path.basename(os.path.normpath(opt.eval_data))
+
+                    with open(f"./result/{opt.exp_name}/log_filtered_index_list_{eval_dir_name}.txt", "a", encoding="utf-8") as f:
                         for e in dataset.filtered_index_list:
                             f.write(f"{e}\n")
 

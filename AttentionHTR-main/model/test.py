@@ -1,4 +1,4 @@
-""" a modified version of deep-text-recognition-benchmark repository https://github.com/clovaai/deep-text-recognition-benchmark/blob/master/test.py """
+# AttentionHTR Model
 
 import os
 import time
@@ -94,7 +94,8 @@ def validation(model, criterion, evaluation_loader, converter, opt):
     # Log file with predictions contains the dir of test data.
     if hasattr(opt, 'eval_data'):
         eval_dir = opt.eval_data.split("/")[-1]
-        log_predictions = open(f'./result/{opt.exp_name}/log_predictions_{eval_dir}.txt', 'a')
+        eval_dir_name = os.path.basename(os.path.normpath(eval_dir))
+        log_predictions = open(f'./result/{opt.exp_name}/log_predictions_{eval_dir_name}.txt', 'a')
         log_predictions.write(f'batch,target,prediction,match,cum_match\n')
 
     for i, (image_tensors, labels) in enumerate(evaluation_loader):
